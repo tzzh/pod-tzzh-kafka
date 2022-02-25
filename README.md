@@ -40,7 +40,7 @@ The pod will return the name of the admin client that you can then pass back to 
 (k/get-metadata admin-client)
 
 ;; e.g to list all the topics
-(-> (k/get-metadata admin-config)
+(-> (k/get-metadata admin-client)
     :Topics
     keys)
 
